@@ -2,7 +2,9 @@
 
 ### User
 #### get user
-POST  http://localhost:8080/api/v1/users
+GET   http://localhost:8080/api/v1/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFzQGEuY29tIiwiaWF0IjoxNzM5NjEwNDc4LCJleHAiOjE3Mzk2OTY4Nzh9.wWlVC5NBkUHYujWHSFwIAi9O4xThgpSTzXFxWGXS5Ms
+
 
 ### Register user
 
@@ -21,6 +23,42 @@ POST http://localhost:8080/api/v1/users/login
 Content-Type: application/json
 
 {
-    "email":"as@a.com",
-    "password":"a"
+    "email":"a@gmail.com",
+    "password":"aa"
+}
+
+
+### post transacrion 
+POST http://localhost:8080/api/v1/transactions
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAZ21haWwuY29tIiwiaWF0IjoxNzM5NjIwMjAyLCJleHAiOjE3Mzk3MDY2MDJ9.A_NGCJK4EQnEMt2aC8fnj7fvuwYtDEs-EbGecFEjhnY
+
+{
+    "type":"Expense",
+    "amount":200,
+    "date":"10-10-2020",
+    "description":"by bauuuuu"
+}
+
+### GEt 
+GET  http://localhost:8080/api/v1/transactions
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAZ21haWwuY29tIiwiaWF0IjoxNzM5NzAzMDk4LCJleHAiOjE3Mzk3ODk0OTh9.xv4ab0wVJxYTdimdnyqscUR49coWHNIwkc27074P4sw
+
+
+
+### Delere tranas
+DELETE http://localhost:8080/api/v1/transactions/67b07edf7ae2a4559dfd074d
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAZ21haWwuY29tIiwiaWF0IjoxNzM5NzAzMDk4LCJleHAiOjE3Mzk3ODk0OTh9.xv4ab0wVJxYTdimdnyqscUR49coWHNIwkc27074P4sw
+
+
+###
+DELETE http://localhost:8080/api/v1/transactions
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAZ21haWwuY29tIiwiaWF0IjoxNzM5Njk5Njc0LCJleHAiOjE3Mzk3ODYwNzR9.4E5F7D6mssJcfFLkcEmDx1vzdeI9PoiwCNMV-9KY1t8
+
+{
+    "transactionsid":[
+        "67b19614725e63eae9901c68"
+    ]
 }
