@@ -5,7 +5,7 @@ import { connectDB } from "./config/mongodbConfig.js";
 import cors from "cors";
 import { errorHandler } from "./middlewares/errorHandlerMiddleware.js";
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8000;
 
 //middlewares
 app.use(express.json());
@@ -20,12 +20,12 @@ app.get("/", (req, res) => {
     message: "hello",
   });
 });
-// page not found 
-app.use((req,res,next)=>{
-  const error = new Error("Not found")
-  error.statusCode=404;
-  next(error)
-})
+// page not found
+app.use((req, res, next) => {
+  const error = new Error("Not found");
+  error.statusCode = 404;
+  next(error);
+});
 //global error handler
 app.use(errorHandler);
 
