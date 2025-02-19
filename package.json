@@ -10,7 +10,8 @@
     "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.10.0",
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "openai": "^4.85.2"
   },
   "scripts": {
     "dev": "nodemon --env-file=.env server.js",

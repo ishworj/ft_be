@@ -13,8 +13,8 @@ Content-Type: application/json
 
 {
     "name":"a",
-    "email":"as@a.com",
-    "password":"a"
+    "email":"asss@a.com",
+    "password":"Java123@sdf"
 }
 
 
@@ -31,12 +31,12 @@ Content-Type: application/json
 ### post transacrion 
 POST http://localhost:8080/api/v1/transactions
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAZ21haWwuY29tIiwiaWF0IjoxNzM5NjIwMjAyLCJleHAiOjE3Mzk3MDY2MDJ9.A_NGCJK4EQnEMt2aC8fnj7fvuwYtDEs-EbGecFEjhnY
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAZ21haWwuY29tIiwiaWF0IjoxNzM5ODU5MzMzLCJleHAiOjE3Mzk5NDU3MzN9.5MTytRuZtowGCey6xq2YFDts5YdQH95jnAnhV4YDGao
 
 {
     "type":"Expense",
     "amount":200,
-    "date":"10-10-2020",
+    "date":"12-10-2020",
     "description":"by bauuuuu"
 }
 
@@ -62,3 +62,11 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAZ21haWwuY29t
         "67b19614725e63eae9901c68"
     ]
 }
+
+
+POST https://api.openai.com/v1/completions
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAZ21haWwuY29tIiwiaWF0IjoxNzM5Njk5Njc0LCJleHAiOjE3Mzk3ODYwNzR9.4E5F7D6mssJcfFLkcEmDx1vzdeI9PoiwCNMV-9KY1t8
+
+
+###

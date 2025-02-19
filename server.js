@@ -26,6 +26,7 @@ app.use((req, res, next) => {
   error.statusCode = 404;
   next(error);
 });
+
 //global error handler
 app.use(errorHandler);
 
