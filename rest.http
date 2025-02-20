@@ -12,9 +12,9 @@ POST http://localhost:8080/api/v1/users
 Content-Type: application/json
 
 {
-    "name":"a",
-    "email":"asss@a.com",
-    "password":"Java123@sdf"
+    "name":"idhhhh",
+    "email":"aaa@gmail.com",
+    "password":"aaa"
 }
 
 
@@ -23,33 +23,33 @@ POST http://localhost:8080/api/v1/users/login
 Content-Type: application/json
 
 {
-    "email":"a@gmail.com",
-    "password":"aa"
+    "email":"aaa@gmail.com",
+    "password":"aaa"
 }
 
 
 ### post transacrion 
 POST http://localhost:8080/api/v1/transactions
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAZ21haWwuY29tIiwiaWF0IjoxNzM5ODU5MzMzLCJleHAiOjE3Mzk5NDU3MzN9.5MTytRuZtowGCey6xq2YFDts5YdQH95jnAnhV4YDGao
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3NDAwNDQwNTcsImV4cCI6MTc0MDEzMDQ1N30.cQnvPBhIUdoB8J9LGkEPYVpfc7LRCi5qQLlxVFPsk_A
 
 {
     "type":"Expense",
     "amount":200,
     "date":"12-10-2020",
-    "description":"by bauuuuu"
+    "description":"by aama"
 }
 
 ### GEt 
 GET  http://localhost:8080/api/v1/transactions
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAZ21haWwuY29tIiwiaWF0IjoxNzM5NzAzMDk4LCJleHAiOjE3Mzk3ODk0OTh9.xv4ab0wVJxYTdimdnyqscUR49coWHNIwkc27074P4sw
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3NDAwNDQwNTcsImV4cCI6MTc0MDEzMDQ1N30.cQnvPBhIUdoB8J9LGkEPYVpfc7LRCi5qQLlxVFPsk_A
 
 
 
 ### Delere tranas
-DELETE http://localhost:8080/api/v1/transactions/67b07edf7ae2a4559dfd074d
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAZ21haWwuY29tIiwiaWF0IjoxNzM5NzAzMDk4LCJleHAiOjE3Mzk3ODk0OTh9.xv4ab0wVJxYTdimdnyqscUR49coWHNIwkc27074P4sw
+DELETE http://localhost:8080/api/v1/transactions/67b6f72c18443b122c7ce0f8
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFhYUBnbWFpbC5jb20iLCJpYXQiOjE3NDAwNDQwNTcsImV4cCI6MTc0MDEzMDQ1N30.cQnvPBhIUdoB8J9LGkEPYVpfc7LRCi5qQLlxVFPsk_A
 
 
 ###

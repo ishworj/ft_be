@@ -66,4 +66,28 @@ router.delete("", authenticate, async (req, res, next) => {
   }
 });
 
+router.delete("/:id", authenticate, async (req, res, next) => {
+  try {
+
+    const transactionData = await deleteTransaction(
+      req.params.id,
+      req.userData._id
+    );
+
+    if (transactionData) {
+      return res.status(200).json({
+        status: "success",
+        message: "  transaction deleted",
+      });
+    } else {
+      return res.status(500).json({
+        status: "error",
+        message: "Error while deleting transaction",
+      });
+    }
+  } catch (error) {
+    next(error);
+  }
+});
+
 export default router;
