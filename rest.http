@@ -63,10 +63,10 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAZ21haWwuY29t
     ]
 }
 
-
-POST https://api.openai.com/v1/completions
-Content-Type: application/json
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAZ21haWwuY29tIiwiaWF0IjoxNzM5Njk5Njc0LCJleHAiOjE3Mzk3ODYwNzR9.4E5F7D6mssJcfFLkcEmDx1vzdeI9PoiwCNMV-9KY1t8
-
-
 ###
+POST  http://localhost:8080/openaii
+Content-Type: application/json
+
+{
+    "question":"who is trump"
+}
